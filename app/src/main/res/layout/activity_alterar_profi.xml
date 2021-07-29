@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    tools:context="activity.AlterarProfi">
+
+        <TextView
+            android:id="@+id/cadastroProfisisonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Alterar Profissional"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/altNomeCompletoProfi"
+            android:layout_width="358dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="40dp"
+            android:hint="Nome Completo:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.698"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastroProfisisonal" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/altApelidoProfi"
+            android:layout_width="358dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:hint="Apelido:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.698"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/altNomeCompletoProfi" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/altFuncao"
+            android:layout_width="358dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:hint="Função:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.698"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/altApelidoProfi"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/altEmailProfi"
+            android:layout_width="358dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:hint="E-mail:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.698"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/altFuncao" />
+
+        <EditText
+            android:id="@+id/altSenhaProfi"
+            android:layout_width="358dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Senha:"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.698"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/altEmailProfi" />
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/altFoneProfi"
+            android:layout_width="358dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Fone:"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.698"
+            app:layout_constraintStart_toStartOf="parent"
+            app:met_mask="+55(##)# #### ####"
+            app:layout_constraintTop_toBottomOf="@+id/altSenhaProfi" />
+
+
+        <EditText
+            android:id="@+id/altDescricao"
+            android:layout_width="358dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:hint="Descrição:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.698"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alttextView5" />
+
+        <TextView
+            android:id="@+id/alttextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Cadastre seu horário de atendimento:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.215"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/altDescricao" />
+
+        <CheckBox
+            android:id="@+id/altcheckSex"
+            android:layout_width="99dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Sex."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.884"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alttextView2" />
+
+        <CheckBox
+            android:id="@+id/altcheckSab"
+            android:layout_width="99dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="12dp"
+            android:text="Sáb."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.884"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/altcheckSex" />
+
+        <CheckBox
+            android:id="@+id/altcheckDom"
+            android:layout_width="81dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:text="Dom."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/altcheckSeg" />
+
+        <CheckBox
+            android:id="@+id/altcheckSeg"
+            android:layout_width="79dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Seg."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.084"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alttextView2" />
+
+        <CheckBox
+            android:id="@+id/altcheckTer"
+            android:layout_width="83dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="12dp"
+            android:text="Ter."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/altcheckDom" />
+
+        <CheckBox
+            android:id="@+id/altcheckQuin"
+            android:layout_width="99dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="44dp"
+            android:text="Quin."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alttextView2" />
+
+        <CheckBox
+            android:id="@+id/altcheckQuar"
+            android:layout_width="99dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Quar."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alttextView2" />
+
+        <Button
+            android:id="@+id/altbtnAlterar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Alterar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/altcheckQuin" />
+
+        <TextView
+            android:id="@+id/alttextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Descrição do serviços:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/altFoneProfi" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
